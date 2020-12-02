@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="794.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Character Sheet">
+            <content>
+              <AnchorPane fx:id="background" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1000.0">
+                     <children>
+                        <ImageView fitHeight="756.0" fitWidth="1020.0" layoutX="-2.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../dandd/Barbarian.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="14.0" prefHeight="21.0" prefWidth="826.0" text="Dungeons and Dragons Character Sheet">
+                           <font>
+                              <Font name="Onyx" size="48.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="saveButton" layoutX="822.0" layoutY="688.0" mnemonicParsing="false" onAction="#saveCharSheet" text="Save Current Build" />
+                        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="101.0" prefHeight="21.0" prefWidth="135.0" text="Character Name:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="charName" alignment="CENTER" layoutX="14.0" layoutY="141.0" promptText="Enter Name..." />
+                        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="171.0" prefHeight="21.0" prefWidth="135.0" text="Strength:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="strengthTextfield" alignment="CENTER" layoutX="14.0" layoutY="206.0" promptText="Enter Strength..." />
+                        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="240.0" prefHeight="21.0" prefWidth="135.0" text="Dexterity:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="dexterityTextfield" alignment="CENTER" layoutX="14.0" layoutY="266.0" promptText="Enter Dexterity..." />
+                        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="302.0" prefHeight="21.0" prefWidth="135.0" text="Constitution:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="intelligenceTextField" alignment="CENTER" layoutX="14.0" layoutY="391.0" promptText="Enter Intelligence..." />
+                        <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="365.0" prefHeight="21.0" prefWidth="135.0" text="Intelligence:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="constitutionTextfField" alignment="CENTER" layoutX="14.0" layoutY="330.0" promptText="Enter Constitution..." />
+                        <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="426.0" prefHeight="21.0" prefWidth="135.0" text="Wisdom:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="wisdomeTextField" alignment="CENTER" layoutX="14.0" layoutY="460.0" promptText="Enter Wisdom..." />
+                        <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="496.0" prefHeight="21.0" prefWidth="135.0" text="Charisma:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="charismaTextField" alignment="CENTER" layoutX="14.0" layoutY="529.0" promptText="Enter Charisma..." />
+                        <TextArea blendMode="COLOR_BURN" layoutX="226.0" layoutY="104.0" prefHeight="80.0" prefWidth="321.0" text="Class and Level:&#10;Race:&#10;&#10;&#10;&#10;">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="classAndLevelTextField" layoutX="332.0" layoutY="115.0" promptText="Enter Class and Level..." />
+                        <TextField fx:id="raceTextField" layoutX="332.0" layoutY="141.0" promptText="Enter Race..." />
+                        <TextField fx:id="proficiencyTextField" alignment="CENTER" layoutX="224.0" layoutY="227.0" promptText="Enter Proficiency..." />
+                        <Label layoutX="227.0" layoutY="197.0" prefHeight="21.0" prefWidth="174.0" text="Proficiency:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="227.0" layoutY="265.0" prefHeight="21.0" prefWidth="102.0" text="Saving Throws:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <ListView blendMode="COLOR_BURN" layoutX="224.0" layoutY="291.0" prefHeight="234.0" prefWidth="211.0" />
+                        <Label layoutX="227.0" layoutY="302.0" text="Strength:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="226.0" layoutY="333.0" text="Dexterity:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="226.0" layoutY="368.0" text="Constitution:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="227.0" layoutY="394.0" text="Intelligence:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="227.0" layoutY="429.0" prefHeight="21.0" prefWidth="63.0" text="Wisdom:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="226.0" layoutY="460.0" text="Charisma:">
+                           <font>
+                              <Font name="Onyx" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="savingStrenghtTextField" alignment="CENTER" layoutX="283.0" layoutY="299.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Strength..." />
+                        <TextField fx:id="savingDexterityTextField" alignment="CENTER" layoutX="283.0" layoutY="330.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Dexterity..." />
+                        <TextField fx:id="savingConstitutionTextField" alignment="CENTER" layoutX="283.0" layoutY="365.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Constitution..." />
+                        <TextField fx:id="savingIntelligenceTextField" alignment="CENTER" layoutX="283.0" layoutY="395.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Intelligence..." />
+                        <TextField fx:id="savingWisdomeTextField" alignment="CENTER" layoutX="283.0" layoutY="427.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Wisdom..." />
+                        <TextField fx:id="savingCharismaTextField" alignment="CENTER" layoutX="283.0" layoutY="457.0" prefHeight="11.0" prefWidth="139.0" promptText="Enter Charisma..." />
+                        <Label layoutX="451.0" layoutY="205.0" text="Armor Class:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="armorClassTextField" alignment="CENTER" layoutX="451.0" layoutY="239.0" promptText="Enter Armor Class..." />
+                        <Label layoutX="451.0" layoutY="264.0" text="Initiative:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="initiativeTextField" alignment="CENTER" layoutX="451.0" layoutY="289.0" promptText="Enter Initiative..." />
+                        <Label layoutX="451.0" layoutY="316.0" text="Speed:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="speedTextField" alignment="CENTER" layoutX="451.0" layoutY="343.0" promptText="Enter Speed:" />
+                        <Label layoutX="453.0" layoutY="375.0" text="Current Hit Points:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="currentHitPointsTextField" alignment="CENTER" layoutX="451.0" layoutY="404.0" promptText="Enter Current Hit Points..." />
+                        <Label layoutX="452.0" layoutY="440.0" text="Hit Dice:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="hitDiceTextField" alignment="CENTER" layoutX="451.0" layoutY="467.0" promptText="Enter your Hit Dice..." />
+                        <Label layoutX="453.0" layoutY="496.0" text="Weapons:">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="loadButton" layoutX="848.0" layoutY="631.0" mnemonicParsing="false" onAction="#loadCharSheet" text="Load Build" />
+                        <TextField fx:id="weapon1TextField" alignment="CENTER" layoutX="447.0" layoutY="527.0" prefHeight="26.0" prefWidth="227.0" promptText="Enter weapon + damage..." />
+                        <TextField fx:id="weapon2TextField" alignment="CENTER" layoutX="447.0" layoutY="561.0" prefHeight="26.0" prefWidth="227.0" promptText="Enter weapon + damage..." />
+                        <TextField fx:id="weapon3TextField" alignment="CENTER" layoutX="447.0" layoutY="595.0" prefHeight="26.0" prefWidth="228.0" promptText="Enter weapon + damage..." />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Inventory">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;">
+                     <children>
+                        <ImageView fitHeight="754.0" fitWidth="1014.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../dandd/9780765391414.0.0.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="14.0" prefHeight="21.0" prefWidth="826.0" text="Dungeons and Dragons Inventory Sheet" textFill="WHITE">
+                           <font>
+                              <Font name="Onyx" size="48.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="saveButtonInv" layoutX="765.0" layoutY="682.0" mnemonicParsing="false" onAction="#saveInventory" text="Save Current Inventory" />
+                        <Button fx:id="loadButtonInv" layoutX="791.0" layoutY="633.0" mnemonicParsing="false" onAction="#loadInventory" text="Load Inventory" />
+                        <TextArea fx:id="inventoryTextArea" layoutX="22.0" layoutY="94.0" prefHeight="588.0" prefWidth="312.0" promptText="Enter Inventory...">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="wealthTextArea" layoutX="791.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0" promptText="Enter Gold, Silver, Copper, etc...">
+                           <font>
+                              <Font name="Onyx" size="24.0" />
+                           </font>
+                        </TextArea>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
