@@ -7,6 +7,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+
 public class Controller {
 
     @FXML
@@ -113,7 +115,35 @@ public class Controller {
     }
 
     @FXML
-    void saveCharSheet(ActionEvent event) {
+    void saveCharSheet(ActionEvent event) throws IOException {
+
+        GameData gameData = new GameData();
+        gameData.charName = charName.getText();
+        gameData.strengthTextfield = strengthTextfield.getText();
+        gameData.dexterityTextfield = dexterityTextfield.getText();
+        gameData.intelligenceTextField = intelligenceTextField.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+        gameData.charName = charName.getText();
+
+
+        FileHandling filehandling = new FileHandling();
+        filehandling.save(gameData);
 
     }
 
