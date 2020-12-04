@@ -135,14 +135,7 @@ public class Controller {
         inventoryTextArea.setText(gameData.inventoryTextArea);
         wealthTextArea.setText(gameData.wealthTextArea);
 
-
-
-
-
     }
-
-
-
     @FXML
     void saveCharSheet(ActionEvent event) throws IOException {
 

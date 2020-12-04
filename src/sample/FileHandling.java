@@ -13,6 +13,7 @@ public class FileHandling {
         PrintWriter output = new PrintWriter(file);
 
         // Nu skal vi bare skrive data
+        output.println(gameData.charName);
         output.println(gameData.strengthTextfield);
         output.println(gameData.dexterityTextfield);
         output.println(gameData.intelligenceTextField);
@@ -49,32 +50,32 @@ public class FileHandling {
         Scanner input = new Scanner(file);
         GameData gameData = new GameData();
 
-        gameData.charName = input.next();
-        gameData.strengthTextfield = input.next();
-        gameData.dexterityTextfield = input.next();
-        gameData.intelligenceTextField = input.next();
-        gameData.constitutionTextfField = input.next();
-        gameData.wisdomeTextField = input.next();
-        gameData.charismaTextField = input.next();
-        gameData.classAndLevelTextField = input.next();
-        gameData.raceTextField = input.next();
-        gameData.proficiencyTextField = input.next();
-        gameData.savingStrenghtTextField = input.next();
-        gameData.savingDexterityTextField = input.next();
-        gameData.savingIntelligenceTextField = input.next();
-        gameData.savingConstitutionTextField = input.next();
-        gameData.savingWisdomeTextField = input.next();
-        gameData.savingCharismaTextField = input.next();
-        gameData.armorClassTextField = input.next();
-        gameData.initiativeTextField = input.next();
-        gameData.speedTextField = input.next();
-        gameData.currentHitPointsTextField = input.next();
-        gameData.hitDiceTextField = input.next();
-        gameData.weapon1TextField = input.next();
-        gameData.weapon2TextField = input.next();
-        gameData.weapon3TextField = input.next();
-        gameData.inventoryTextArea = input.next();
-        gameData.wealthTextArea = input.next();
+        gameData.charName = input.nextLine();
+        gameData.strengthTextfield = input.nextLine();
+        gameData.dexterityTextfield = input.nextLine();
+        gameData.intelligenceTextField = input.nextLine();
+        gameData.constitutionTextfField = input.nextLine();
+        gameData.wisdomeTextField = input.nextLine();
+        gameData.charismaTextField = input.nextLine();
+        gameData.classAndLevelTextField = input.nextLine();
+        gameData.raceTextField = input.nextLine();
+        gameData.proficiencyTextField = input.nextLine();
+        gameData.savingStrenghtTextField = input.nextLine();
+        gameData.savingDexterityTextField = input.nextLine();
+        gameData.savingIntelligenceTextField = input.nextLine();
+        gameData.savingConstitutionTextField = input.nextLine();
+        gameData.savingWisdomeTextField = input.nextLine();
+        gameData.savingCharismaTextField = input.nextLine();
+        gameData.armorClassTextField = input.nextLine();
+        gameData.initiativeTextField = input.nextLine();
+        gameData.speedTextField = input.nextLine();
+        gameData.currentHitPointsTextField = input.nextLine();
+        gameData.hitDiceTextField = input.nextLine();
+        gameData.weapon1TextField = input.nextLine();
+        gameData.weapon2TextField = input.nextLine();
+        gameData.weapon3TextField = input.nextLine();
+        gameData.inventoryTextArea = input.nextLine();
+        gameData.wealthTextArea = input.nextLine();
 
         return gameData;
     }
