@@ -7,6 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -94,12 +95,6 @@ public class Controller {
     private TextField weapon3TextField;
 
     @FXML
-    private Button saveButtonInv;
-
-    @FXML
-    private Button loadButtonInv;
-
-    @FXML
     private TextArea inventoryTextArea;
 
     @FXML
@@ -107,6 +102,7 @@ public class Controller {
 
     @FXML
     void loadCharSheet(ActionEvent event) throws FileNotFoundException {
+
 
         FileHandling fileHandling = new FileHandling();
         GameData gameData;
@@ -145,10 +141,7 @@ public class Controller {
 
     }
 
-    @FXML
-    void loadInventory(ActionEvent event) {
 
-    }
 
     @FXML
     void saveCharSheet(ActionEvent event) throws IOException {
@@ -187,17 +180,6 @@ public class Controller {
 
     }
 
-    @FXML
-    void saveInventory(ActionEvent event) throws IOException {
 
-        GameData gameData = new GameData();
-        gameData.inventoryTextArea = inventoryTextArea.getText();
-        gameData.wealthTextArea = wealthTextArea.getText();
-
-        FileHandling fileHandling = new FileHandling();
-        fileHandling.save(gameData);
-
-
-    }
 
 }

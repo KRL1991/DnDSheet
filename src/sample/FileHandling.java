@@ -44,6 +44,7 @@ public class FileHandling {
     }
 
     public GameData load() throws FileNotFoundException {
+
         File file = new File("gameData.txt");
         Scanner input = new Scanner(file);
         GameData gameData = new GameData();
@@ -67,8 +68,8 @@ public class FileHandling {
         gameData.armorClassTextField = input.next();
         gameData.initiativeTextField = input.next();
         gameData.speedTextField = input.next();
-        gameData.currentHitPointsTextField= input.next();
-        gameData.hitDiceTextField= input.next();
+        gameData.currentHitPointsTextField = input.next();
+        gameData.hitDiceTextField = input.next();
         gameData.weapon1TextField = input.next();
         gameData.weapon2TextField = input.next();
         gameData.weapon3TextField = input.next();
